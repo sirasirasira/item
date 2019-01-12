@@ -1,0 +1,7 @@
+if [ $# -ne 1 ]; then
+	echo "mkpdf [new-pdf-name]"
+	echo "you need NOT input .pdf"
+	exit 0
+fi
+t=`echo ${1} | cut -d'.' -f1`
+cp template.pdf $t.pdf
