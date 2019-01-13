@@ -2,16 +2,14 @@ file_name = template
 
 .PHONY: all
 all:
-	#platex $(file_name).tex
-	#dvipdfmx $(file_name).dvi
+	#pdflatex $(file_name).tex
+	#bibtex $(file_name)
+	#pdflatex $(file_name).tex
 	pdflatex $(file_name).tex
 	evince $(file_name).pdf &
 
-pdf: $(file_name).dvi
-	dvipdfmx $(file_name).dvi
-
 .PHONY: clean
-clean: 
+clean:
 	rm -f $(file_name).[^t]* $(file_name).toc
 
 .PHONY: cln
