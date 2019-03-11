@@ -49,3 +49,6 @@ CentOS の入れ方
 ・terminator
 	$ sudo yum install terminator
 	キーバインド設定
+
+・tig
+	$ sudo yum install tig
