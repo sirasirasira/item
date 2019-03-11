@@ -1,0 +1,51 @@
+CentOS の入れ方
+・インストール
+	USB or CD
+	開発環境を適宜入れる
+	＊画面の自動ロックを解除
+
+・ネットワーク
+	もしネットワークを認識してくれない
+	ドライバがあるか確認↓
+	https://webnetforce.net/ubuntu-on-kabylake-use-ethernet/
+
+・yumの更新
+	$ sudo yum install
+
+・epel(パッケージ管理拡張)
+	$ sudo yum install epel-release
+
+・remi(パッケージ管理拡張)
+	Remi公式ページ
+	download remi-release-7.rpm
+	$ sudo yum localinstall remi-release-7.rpm
+
+・dirの英語化
+	~/.config.user-dirs.dirs を英語に
+	homeの日本語dirを英語に
+
+・mozc(高度な日本語変換)
+	https://qiita.com/TANATY/items/8c0c17d54ab81fd1b491
+
+・vimx(clipbord有)
+	$ sudo yum install vim-X11
+	.bashrc に alias vimi="vimx"
+
+・tex
+	https://www.tug.org/texlive/
+	Quick install for Unix
+	various ways to acquire the software
+	Installing TeX Live over the Internet
+	install-tl-unx.tar.gz
+	$ tar xvf install-tl-unx.tar.gz
+	$ sudo ./install-tl
+
+・chrome
+	https://www.karelie.net/how-to-install-google-chrome-on-centos7/
+
+・Thunderbird
+	$ sudo yum install thunderbird
+
+・terminator
+	$ sudo yum install terminator
+	キーバインド設定
