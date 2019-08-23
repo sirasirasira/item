@@ -14,6 +14,10 @@ if [ $1 = "pdflatex" ]; then
 	cp -r ~/template/pdflatex/* .
 fi
 
+if [ $1 = "platex" ]; then
+	cp -r ~/template/platex/* .
+fi
+
 if [ $1 = "beamer" ]; then
 	cp -r ~/template/beamer/* .
 fi
